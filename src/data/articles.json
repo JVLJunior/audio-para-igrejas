@@ -1,0 +1,146 @@
+{
+  "articles": [
+    {
+      "id": "introducao",
+      "title": "Introdução ao Áudio para Igrejas",
+      "category": "Fundamentos",
+      "subcategory": "Conceitos Básicos",
+      "readTime": "10 min",
+      "author": "Manus AI",
+      "date": "2024-06-13",
+      "excerpt": "Compreenda a importância do áudio na igreja e como este guia pode ajudar sua comunidade a ter um som de qualidade.",
+      "featured": true,
+      "tags": ["iniciante", "conceitos", "igreja"],
+      "contentFile": "introducao.md"
+    },
+    {
+      "id": "fundamentos-som",
+      "title": "Entendendo o Som: Conceitos Básicos para Igrejas",
+      "category": "Fundamentos",
+      "subcategory": "Teoria do Som",
+      "readTime": "15 min",
+      "author": "Manus AI",
+      "date": "2024-06-13",
+      "excerpt": "Aprenda os fundamentos do som, incluindo frequência, amplitude e timbre, e como estes conceitos se aplicam na prática em ambientes de culto.",
+      "featured": true,
+      "tags": ["teoria", "frequência", "amplitude", "timbre"],
+      "contentFile": "fundamentos-som.md"
+    },
+    {
+      "id": "microfones",
+      "title": "Microfones para Igrejas: Guia Completo de Escolha e Uso",
+      "category": "Equipamentos",
+      "subcategory": "Microfones",
+      "readTime": "20 min",
+      "author": "Manus AI",
+      "date": "2024-06-13",
+      "excerpt": "Tudo sobre microfones dinâmicos vs condensadores, aplicações específicas para pastores, cantores e instrumentos, e técnicas de uso correto.",
+      "featured": true,
+      "tags": ["microfones", "dinâmico", "condensador", "equipamentos"],
+      "contentFile": "microfones.md"
+    },
+    {
+      "id": "equalizacao",
+      "title": "Equalização para Igrejas: Moldando o Som Perfeito",
+      "category": "Técnicas",
+      "subcategory": "Processamento",
+      "readTime": "18 min",
+      "author": "Manus AI",
+      "date": "2024-06-13",
+      "excerpt": "Domine a arte da equalização para obter clareza na voz do pastor, presença nos instrumentos e um som equilibrado em todo o culto.",
+      "featured": true,
+      "tags": ["equalização", "EQ", "frequências", "mixagem"],
+      "contentFile": "equalizacao.md"
+    },
+    {
+      "id": "mesas-som",
+      "title": "Mesas de Som para Igrejas: Como Escolher e Operar",
+      "category": "Equipamentos",
+      "subcategory": "Mesas de Som",
+      "readTime": "22 min",
+      "author": "Manus AI",
+      "date": "2024-06-13",
+      "excerpt": "Guia completo sobre mesas de som analógicas e digitais, recursos essenciais e técnicas de operação para igrejas.",
+      "featured": false,
+      "tags": ["mesa de som", "mixer", "analógico", "digital"],
+      "contentFile": "mesas-som.md"
+    },
+    {
+      "id": "alto-falantes",
+      "title": "Alto-falantes e Amplificadores: Potência e Qualidade",
+      "category": "Equipamentos",
+      "subcategory": "Amplificação",
+      "readTime": "16 min",
+      "author": "Manus AI",
+      "date": "2024-06-13",
+      "excerpt": "Entenda como escolher alto-falantes e amplificadores adequados para o tamanho e acústica de sua igreja.",
+      "featured": false,
+      "tags": ["alto-falantes", "amplificadores", "potência", "acústica"],
+      "contentFile": "alto-falantes.md"
+    },
+    {
+      "id": "acustica-igrejas",
+      "title": "Acústica de Igrejas: Desafios e Soluções",
+      "category": "Fundamentos",
+      "subcategory": "Acústica",
+      "readTime": "14 min",
+      "author": "Manus AI",
+      "date": "2024-06-13",
+      "excerpt": "Como lidar com os desafios acústicos únicos dos templos religiosos e melhorar a inteligibilidade da palavra.",
+      "featured": false,
+      "tags": ["acústica", "reverberação", "eco", "inteligibilidade"],
+      "contentFile": "acustica-igrejas.md"
+    },
+    {
+      "id": "feedback-controle",
+      "title": "Controle de Feedback: Eliminando a Microfonia",
+      "category": "Solução de Problemas",
+      "subcategory": "Troubleshooting",
+      "readTime": "12 min",
+      "author": "Manus AI",
+      "date": "2024-06-13",
+      "excerpt": "Técnicas práticas para identificar, prevenir e eliminar o feedback (microfonia) durante cultos e eventos.",
+      "featured": false,
+      "tags": ["feedback", "microfonia", "troubleshooting", "solução"],
+      "contentFile": "feedback-controle.md"
+    }
+  ],
+  "categories": [
+    {
+      "id": "fundamentos",
+      "name": "Fundamentos",
+      "description": "Conceitos básicos de áudio e acústica",
+      "icon": "book-open",
+      "color": "blue"
+    },
+    {
+      "id": "equipamentos",
+      "name": "Equipamentos",
+      "description": "Guias sobre microfones, mesas de som e amplificação",
+      "icon": "settings",
+      "color": "green"
+    },
+    {
+      "id": "tecnicas",
+      "name": "Técnicas",
+      "description": "Técnicas de mixagem e processamento de áudio",
+      "icon": "sliders",
+      "color": "purple"
+    },
+    {
+      "id": "solucao-problemas",
+      "name": "Solução de Problemas",
+      "description": "Troubleshooting e resolução de problemas comuns",
+      "icon": "wrench",
+      "color": "red"
+    },
+    {
+      "id": "casos-praticos",
+      "name": "Casos Práticos",
+      "description": "Exemplos reais e configurações específicas",
+      "icon": "lightbulb",
+      "color": "yellow"
+    }
+  ]
+}
+
