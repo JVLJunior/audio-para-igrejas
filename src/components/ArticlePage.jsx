@@ -4,9 +4,7 @@ import { ArrowLeft, Clock, BookOpen, User, ChevronRight } from 'lucide-react'
 import { Button } from '@/components/ui/button.jsx'
 import { useArticles } from '../hooks/useArticles.js'
 import { parseMarkdown, extractTableOfContents, formatDate } from '../utils/articleUtils.js'
-
-// Importa todos os arquivos .md da pasta content
-const markdownModules = import.meta.glob('../content/*.md', { as: 'raw' })
+import { markdownMap } from '../content/markdownMap.js'
 
 const ArticlePage = () => {
   const { slug } = useParams()
@@ -25,39 +23,27 @@ const ArticlePage = () => {
       const articleData = getArticleById(slug)
 
       if (!articleData) {
-        console.warn('Artigo não encontrado!')
         setLoading(false)
         return
       }
 
       setArticle(articleData)
 
-      const filePath = `../content/${articleData.contentFile}`
-      const loader = markdownModules[filePath]
+      const markdownContent = markdownMap[articleData.contentFile]
 
-      if (loader) {
-        try {
-          const markdownContent = await loader()
-          const htmlContent = parseMarkdown(markdownContent)
-          const toc = extractTableOfContents(markdownContent)
-
-          setContent(htmlContent)
-          setTableOfContents(toc)
-        } catch (error) {
-          console.error('Erro ao carregar markdown:', error)
-          setContent(`<h1>${articleData.title}</h1><p>Erro ao carregar conteúdo.</p>`)
-        }
+      if (markdownContent) {
+        const htmlContent = parseMarkdown(markdownContent)
+        const toc = extractTableOfContents(markdownContent)
+        setContent(htmlContent)
+        setTableOfContents(toc)
       } else {
-        console.warn('Arquivo markdown não encontrado:', filePath)
         setContent(`<h1>${articleData.title}</h1><p>Conteúdo não encontrado.</p>`)
       }
 
       setLoading(false)
     }
 
-    if (slug) {
-      loadArticle()
-    }
+    if (slug) loadArticle()
   }, [slug, getArticleById])
 
   const relatedArticles = article ? getRelatedArticles(article) : []
@@ -81,7 +67,7 @@ const ArticlePage = () => {
           <p className="text-gray-600 mb-6">
             O artigo que você tentou acessar não existe ou foi removido.
           </p>
-          <Button onClick={() => navigate('/artigos', { replace: true })} variant="outline">
+          <Button onClick={() => navigate('/artigos')} variant="outline">
             <ArrowLeft className="mr-2 h-4 w-4" />
             Voltar para a lista de artigos
           </Button>
